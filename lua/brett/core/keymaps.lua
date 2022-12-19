@@ -21,6 +21,14 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") -- go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to prev tab
 
+keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- in view mode drag down
+keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- in view mode drag up
+
+keymap.set("n", "<C-d>", "<C-d>zz") -- half page jump keep cursor in middle
+keymap.set("n", "<C-u>", "<C-u>zz") -- half page jump keep cursor in middle
+keymap.set("n", "n", "nzzzv") -- search terms stay in middle
+keymap.set("n", "N", "Nzzzv") -- search terms stay in middle
+
 -- plugin keymaps
 
 -- vim-maximizer
