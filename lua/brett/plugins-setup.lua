@@ -104,6 +104,9 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
+	-- rsync for nvim
+	use({ "kenn7/vim-arsync", requires = { { "prabirshrestha/async.vim" } } })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/brettsmith/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
+  ["async.vim"] = {
+    loaded = true,
+    path = "/Users/brettsmith/.local/share/nvim/site/pack/packer/start/async.vim",
+    url = "https://github.com/prabirshrestha/async.vim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/brettsmith/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -225,6 +230,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/brettsmith/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-arsync"] = {
+    loaded = true,
+    path = "/Users/brettsmith/.local/share/nvim/site/pack/packer/start/vim-arsync",
+    url = "https://github.com/kenn7/vim-arsync"
   },
   ["vim-fugitive"] = {
     loaded = true,
