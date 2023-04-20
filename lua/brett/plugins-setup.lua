@@ -89,7 +89,7 @@ return packer.startup(function(use)
 	})
 
 	-- harpoon
-	use("theprimeagen/harpoon")
+	-- use("theprimeagen/harpoon")
 
 	-- undotree
 	use("mbbill/undotree")

@@ -16,14 +16,15 @@ end
 mason.setup()
 
 mason_lspconfig.setup({
-  ensure_installed = {
-    "tsserver",
-    "html",
-    "cssls",
-    "tailwindcss",
-    "lua_ls",
-    "emmet_ls",
-  }
+	ensure_installed = {
+		"tsserver",
+		"html",
+		"cssls",
+		"tailwindcss",
+		"lua_ls",
+		"emmet_ls",
+		"pyright",
+	},
 })
 
 mason_null_ls.setup({

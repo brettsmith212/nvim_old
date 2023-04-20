@@ -11,12 +11,21 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "+", "<C-a>")
 keymap.set("n", "-", "<C-x>")
 keymap.set("n", "<C-a>", "gg<S-v>G") -- select all
+keymap.set("n", "<leader>df", ":w !diff & -<CR>") -- see diff in current file before write
 
+-- split window
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current window split
 
+-- move cursor
+keymap.set("", "sj", "<C-w>j") -- move cursor to bottom window
+keymap.set("", "sk", "<C-w>k") -- move cursor to top window
+keymap.set("", "sl", "<C-w>l") -- move cursor to right window
+keymap.set("", "sh", "<C-w>h") -- move cursor to left window
+
+-- tabs
 keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>te", ":tabedit<CR>", { silent = true }) -- new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
