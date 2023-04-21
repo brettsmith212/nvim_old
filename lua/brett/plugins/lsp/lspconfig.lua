@@ -58,6 +58,12 @@ lspconfig["pyright"].setup({
 	on_attach = on_attach,
 })
 
+-- configure c/c++ server
+lspconfig["clangd"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 -- configure html server
 lspconfig["html"].setup({
 	capabilities = capabilities,
