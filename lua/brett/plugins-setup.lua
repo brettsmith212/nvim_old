@@ -107,6 +107,13 @@ return packer.startup(function(use)
 	-- rsync for nvim
 	use({ "kenn7/vim-arsync", requires = { { "prabirshrestha/async.vim" } } })
 
+	-- debugger
+	use("mfussenegger/nvim-dap")
+	use("rcarriga/nvim-dap-ui")
+	use("theHamsta/nvim-dap-virtual-text")
+	use("mfussenegger/nvim-dap-python")
+	use("nvim-telescope/telescope-dap.nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

@@ -60,3 +60,19 @@ keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 -- vim fugitive
 keymap.set("n", "<leader>gs", vim.cmd.Git)
+
+-- debugger
+keymap.set("n", "<F5>", ":lua require'dap'.continue()<CR>")
+keymap.set("n", "<F10>", ":lua require'dap'.step_over()<CR>")
+keymap.set("n", "<F11>", ":lua require'dap'.step_into()<CR>")
+keymap.set("n", "<F12>", ":lua require'dap'.step_out()<CR>")
+keymap.set("n", "<leader>b", ":lua require'dap'.toggle_breakpoint()<CR>")
+keymap.set("n", "<leader>B", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>")
+keymap.set("n", "<leader>lp", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>")
+keymap.set("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>")
+keymap.set("n", "<leader>dt", ":lua require'dap-python'.setup('~/.virtualenvs/debugpy/bin/python')<CR>")
+keymap.set("n", "<leader>dui", ":lua require'dapui'.open()<CR>")
+
+require("dapui").setup()
+require("dap-python").setup()
+require("nvim-dap-virtual-text").setup()
