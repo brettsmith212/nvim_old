@@ -13,3 +13,11 @@
 
 1. `brew install ripgrep` -- enable live grep
 2. `brew install fd` -- enable live grep
+3. Install debugpy into a dedicated virtualenv:
+
+```
+mkdir .virtualenvs
+cd .virtualenvs
+python -m venv debugpy
+debugpy/bin/python -m pip install debugpy
+```
