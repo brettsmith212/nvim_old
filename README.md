@@ -22,4 +22,4 @@ python -m venv debugpy
 debugpy/bin/python -m pip install debugpy
 ```
 
-4. Beautify your [terminal] (https://medium.com/airfrance-klm/beautify-your-iterm2-and-prompt-40f148761a49)
+4. Beautify your [terminal](https://medium.com/airfrance-klm/beautify-your-iterm2-and-prompt-40f148761a49)
